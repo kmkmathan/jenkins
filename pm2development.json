@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "myapp",
+            "script": "app.js",
+            "merge-logs": true,
+            "log_file": "logs/dev.log",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+            "watch": ["*.js", "app.js"],
+            "ignoreWatch": ["logs", "public"],
+            "nodeArgs": ["--trace-warnings"],
+            "env": {
+                "NODE_ENV": "development",
+                "PORT": 3000
+            }
+        }
+    ]
+}
